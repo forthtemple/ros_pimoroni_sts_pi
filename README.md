@@ -12,11 +12,11 @@ cd ~/catkin_ws
 catkin_make 
 ```
 # Running
-In on terminal run specifying the IP address of your Raspberry PI:
+In one terminal run the following specifying the IP address of your Raspberry PI:
 ```
 roslaunch pimoroni_sts_pi pimoroni_sts_pi.launch ip_address:=192.168.1.107
 ```
-To control via a keyboard use:
+On another terminal to control your STS PI via a keyboard use:
 ```
 rosrun pimoroni_sts_pi teleop_twist_keyboard.py
 ```
