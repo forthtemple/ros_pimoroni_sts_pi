@@ -9,7 +9,7 @@ The Pimoroni STS PI is a cheap roving robot that uses a Raspberry PI as a contro
 The ultimate aim of the Gazebo simulation of the Pimoroni is to use reinforcement learning to teach the Pimoroni to do tasks like find objects. Once the task has been learnt within the ROS Gazebo framework the results will be used on a real Pimoroni.
 
 # Installation
-To make it clearthe setup is similar to the diagram below:
+To make it clear the setup is similar to the diagram below:
 
 [![Youtube Pimoroni](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
 
