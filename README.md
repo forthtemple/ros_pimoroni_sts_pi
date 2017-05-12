@@ -8,7 +8,8 @@ Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to
 
 # Installation
 To make it clear on the setup it is similar to the diagram below:
-[![Youtube sumo](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
+
+[![Youtube Pimoroni](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
 
 You have ROS Gazebo running on a PC which in turns communicates with your Raspberry PI that is on your Pimoroni STS PI.
 
