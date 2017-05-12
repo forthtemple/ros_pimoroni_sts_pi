@@ -13,13 +13,15 @@ To make it clear on the setup it is similar to the diagram below:
 
 You have ROS Gazebo running on a PC which in turns communicates with your Raspberry PI that is on your Pimoroni STS PI.
 
+The steps of installation are:
+
 1. On your Raspberry PI that is on your Pimoroni STS PI install and run app.py on:
 
 https://github.com/sandyjmacdonald/sts_pi_controller
 
-2. On
-Install ROS (eg http://wiki.ros.org/indigo/Installation/Ubuntu if from ubuntu)
+2. On your PC install ROS (eg http://wiki.ros.org/indigo/Installation/Ubuntu if from ubuntu)
 
+3. On your PC install in catkin this source
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/forthtemple/ros_pimoroni_sts_pi.git
