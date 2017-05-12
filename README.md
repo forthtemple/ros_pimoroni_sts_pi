@@ -2,11 +2,11 @@
 
 This provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. Uses standard Twist. 
 
-[![Youtube sumo](http://forthtemple.com/pimoroni/pimoronisetup.jpg)]
 
 [![Youtube sumo](http://forthtemple.com/pimoroni/pimoroniyoutube.jpg)](https://www.youtube.com/watch?v=zDb48-HvZDI) 
 
 https://github.com/sandyjmacdonald/sts_pi_controller
+[![Youtube sumo](http://forthtemple.com/pimoroni/pimoronisetup250.jpg)]
 
 # Installation
 Install ROS (eg http://wiki.ros.org/indigo/Installation/Ubuntu if from ubuntu)
