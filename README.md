@@ -1,6 +1,6 @@
-# Pimoroni STS PI ROS wrapper
+# Pimoroni STS PI ROS Gazebo Simulation
 
-ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. Uses standard Twist.
+This provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. Uses standard Twist. 
 
 
 [![Youtube sumo](http://forthtemple.com/pimoroni/pimoroniyoutube.jpg)](https://www.youtube.com/watch?v=zDb48-HvZDI) 
