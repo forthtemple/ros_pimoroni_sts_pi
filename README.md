@@ -1,15 +1,22 @@
 # Pimoroni STS PI ROS Gazebo Simulation
 
-This provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. Uses standard Twist. 
-
+Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. and uses standard Twist.  It also includes a Gazebo simulation of Pimoroni STS PI. You can record movements of a real Pimoroni and then replay in the simulation like in the video below:
 
 [![Youtube sumo](http://forthtemple.com/pimoroni/pimoroniyoutube.jpg)](https://www.youtube.com/watch?v=zDb48-HvZDI) 
 
-https://github.com/sandyjmacdonald/sts_pi_controller
 
-[![Youtube sumo](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
 
 # Installation
+To make it clear on the setup it is similar to the diagram below:
+[![Youtube sumo](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
+
+You have ROS Gazebo running on a PC which in turns communicates with your Raspberry PI that is on your Pimoroni STS PI.
+
+1. On your Raspberry PI that is on your Pimoroni STS PI install and run app.py on:
+
+https://github.com/sandyjmacdonald/sts_pi_controller
+
+2. On
 Install ROS (eg http://wiki.ros.org/indigo/Installation/Ubuntu if from ubuntu)
 
 ```
