@@ -1,9 +1,8 @@
 # Pimoroni STS PI ROS Gazebo Simulation
 
-Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS. and uses standard Twist.  It also includes a Gazebo simulation of Pimoroni STS PI. You can record movements of a real Pimoroni and then replay in the simulation like in the video below:
+Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to control your Pimoroni STS PI from your PC running ROS using standard Twist.  It also includes a Gazebo simulation of Pimoroni STS PI. You can record movements of a real Pimoroni and then replay in the simulation like in the video below:
 
 [![Youtube sumo](http://forthtemple.com/pimoroni/pimoroniyoutube.jpg)](https://www.youtube.com/watch?v=zDb48-HvZDI) 
-
 
 
 # Installation
