@@ -4,6 +4,7 @@ Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to
 
 [![Youtube sumo](http://forthtemple.com/pimoroni/pimoroniyoutube.jpg)](https://www.youtube.com/watch?v=zDb48-HvZDI) 
 
+The Pimoroni STS PI is a cheap roving robot that uses a Raspberry PI as a controller.
 
 # Installation
 To make it clearthe setup is similar to the diagram below:
