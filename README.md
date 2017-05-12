@@ -7,11 +7,11 @@ Provides a Gazebo Simulation and ROS wrapper for Pimoroni STS PI.  Allows you to
 
 
 # Installation
-To make it clear on the setup it is similar to the diagram below:
+To make it clearthe setup is similar to the diagram below:
 
 [![Youtube Pimoroni](http://forthtemple.com/pimoroni/pimoronisetup250ii.jpg)]
 
-You have ROS Gazebo running on a PC which in turns communicates with your Raspberry PI that is on your Pimoroni STS PI.
+You run ROS Gazebo on a PC which in turns communicates with your Raspberry PI that is on your Pimoroni STS PI.
 
 The steps of installation are:
 
@@ -28,8 +28,18 @@ git clone https://github.com/forthtemple/ros_pimoroni_sts_pi.git
 cd ~/catkin_ws
 catkin_make 
 ```
-# Running
-In one terminal run the following specifying the IP address of your Raspberry PI:
+# Running Gazebo simulation
+To use the Pimoron Gazebo simulation in one terminal run the following:
+```
+roslaunch pimoroni_sts_pi_gazebo myworld.launch
+```
+On another terminal to control your STS PI in Gazebo via a keyboard use:
+```
+rosrun pimoroni_sts_pi teleop_twist_keyboard.py
+```
+
+# Running Real Pimoroni STS PI
+To control a real Pimoroni STS PI via ROS on your PC in one terminal run the following specifying the IP address of your Raspberry PI:
 ```
 roslaunch pimoroni_sts_pi pimoroni_sts_pi.launch ip_address:=192.168.1.107
 ```
@@ -38,11 +48,11 @@ On another terminal to control your STS PI via a keyboard use:
 rosrun pimoroni_sts_pi teleop_twist_keyboard.py
 ```
 
-To record a real Pimoroni STS PI
+To record a real Pimoroni STS PI movements you can use ROSBAG:
 ```
 rosbag record cmd_vel
 ```
-To play it to your Gazebo Pimoroni STS PI replace xx-xxx-xx with your recorded bag file name
+To play it to your Gazebo Pimoroni STS PI replace xx-xxx-xx with your recorded bag file name. Play this while running the Gazebo simulation
 ```
 rosbag play xx-xxx-xx.bag
 ```
