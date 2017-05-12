@@ -20,3 +20,12 @@ On another terminal to control your STS PI via a keyboard use:
 ```
 rosrun pimoroni_sts_pi teleop_twist_keyboard.py
 ```
+
+To record a real Pimoroni STS PI
+```
+rosbag record cmd_vel
+```
+To play it to your Gazebo Pimoroni STS PI replace xx-xxx-xx with your recorded bag file name
+```
+rosbag play xx-xxx-xx.bag
+```
