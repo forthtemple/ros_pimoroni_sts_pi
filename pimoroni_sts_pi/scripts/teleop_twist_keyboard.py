@@ -8,7 +8,7 @@ from std_msgs.msg import Empty
 import sys, select, termios, tty
 
 msg = """
-ROSSUMO
+PIMORONI STS PI
 Reading from the keyboard  and Publishing to Twist!
 ---------------------------
 Moving around:
@@ -25,7 +25,7 @@ For Holonomic mode (strafing), hold down the shift key:
 N/A t : up (+z)
 N/A b : down (-z)
 
-space : jump
+space : ultrasonic
 
 anything else : stop
 
@@ -81,10 +81,11 @@ if __name__=="__main__":
     	settings = termios.tcgetattr(sys.stdin)
 	
 	pub = rospy.Publisher('cmd_vel', Twist, queue_size = 1)
+	pubscan = rospy.Publisher('scan',Empty, queue_size = 1)
 	rospy.init_node('teleop_twist_keyboard')
 
-	speed = rospy.get_param("~speed", 2) #0.5) #30
-	turn = rospy.get_param("~turn", 3) #1.0) #20
+	speed = rospy.get_param("~speed", 0.065) #0.5) #30
+	turn = rospy.get_param("~turn", 1.2) #1.0) #20
 	x = 0
 	y = 0
 	z = 0
@@ -96,7 +97,17 @@ if __name__=="__main__":
 		print vels(speed,turn)
 		while(1):
 			key = getKey()
-                        if key in moveBindings.keys():
+                        if key == ' ':
+			        #print 'xxx'
+				#print pubscan.publish()
+				rospy.wait_for_service('add_two_ints')
+			    	try:
+					add_two_ints = rospy.ServiceProxy('add_two_ints', AddTwoInts)
+					resp1 = add_two_ints(5, 2)
+					print resp1.sum
+			    	except rospy.ServiceException, e:
+					print "Service call failed: %s"%e
+                        elif key in moveBindings.keys():
 				x = moveBindings[key][0]
 				y = moveBindings[key][1]
 				z = moveBindings[key][2]
@@ -105,7 +116,7 @@ if __name__=="__main__":
 				speed = speed * speedBindings[key][0]
 				turn = turn * speedBindings[key][1]
 
-				print vels(speed,turn)
+				#print vels(speed,turn)
 				if (status == 14):
 					print msg
 				status = (status + 1) % 15
